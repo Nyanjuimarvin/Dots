@@ -2,3 +2,17 @@
 #+AUTHOR: Nyanjui Marvin
 
 A repository for my current desktop configurations
+
+** UTILITIES
++ Tiling Window Manager(Bspwm)
++ Keybindings (Sxhkd)
++ Editors(Android Studio, Intellij, VsCode, Emacs, Nvim)
++ Browser(Firefox,QuteBrowser)
++ Bar(Polybar)
++ Dashboard, System Menu and Player(eww widgets)
++ Screenshot Utility(Scrot)
++ Audio Visualizer(Glava)
++ Notifications Daemon(dunst)
++ Shell(Bash,Fish,zsh)
++ Terminal Emulator(Kitty)
++ App Launcher, Powermenu(Rofi)
