@@ -4,7 +4,7 @@
 A repository for my current desktop configurations
 
 ** UTILITIES
-+ Tiling Window Manager ([[Bspwm][https://github.com/baskerville/bspwm]])
++ Tiling Window Manager ([[https://github.com/baskerville/bspwm][Bspwm]])
 + Keybindings (Sxhkd)
 + Editors (Android Studio, Intellij, VsCode, Emacs, Nvim)
 + Browser (Firefox,QuteBrowser)
