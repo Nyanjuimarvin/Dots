@@ -1,0 +1,9 @@
+#+AUTHOR: Nyanjui Marvin
+#+TITLE: Polybar dependencies
+#+DATE: <2023-02-08 Wed>
+
+The following dependencies are required to run polybar:
+- Pywal
+- Rofi
+- calc
+- networkmanager_dmenu
