@@ -1,0 +1,20 @@
+#+AUTHOR: Nyanjui Marvin
+#+TITLE: Eww dependencies
+
+** Prerequisites
++ rustc
++ cargo (nightly toolchain)
+
+
+Use [[https://rustup.rs/][rustup]] to install as it's easier.
+
+*** Required
+
++ gtk3 (libgdk-3, libgtk-3)
++ gtk-layer-shell (only on Wayland)
++ pango (libpango)
++ gdk-pixbuf2 (libgdk_pixbuf-2)
++ cairo (libcairo, libcairo-gobject)
++ glib2 (libgio, libglib-2, libgobject-2)
++ gcc-libs (libgcc)
++ glibc
