@@ -1,0 +1,35 @@
+#+AUTHOR: Nyanjui Marvin
+#+TITLE: Dunst dependencies
+
+*** Required
+
+- dbus (runtime)
+- libxinerama
+- libxrandr
+- libxss
+- glib
+- pango/cairo
+- libnotify
+- wayland-client
+- wayland-protocols (optional)
+- xdg-utils (optionals)
+
+
+**** Fedora
+
+#+BEGIN_SRC bash
+
+sudo dnf install dbus-devel libX11-devel libXrandr-devel glib2-devel pango-devel gtk3-devel libxdg-basedir-devel libXScrnSaver-devel libnotify-devel
+
+#+END_SRC
+
+
+
+**** Arch
+
+#+BEGIN_SRC bash
+
+sudo pacman -S gdk-pixbuf2 libxinerama libxrandr libxss pango systemd wayland git libnotify wayland-protocols libnotify xdg-utils xdg-utils-symlink-fix xdg-utils-lxqt opener mimi-bachoseven-git mimi mimi-git xdg-utils-handlr mimejs-git xdg-utils-mimeo
+
+
+#+END_SRC

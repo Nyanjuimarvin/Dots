@@ -24,3 +24,4 @@ A repository for my current desktop configurations
 ** Dependencies
 - polybar : [[dependencies/polybar-dependencies.org][dependencies]]
 - eww : [[dependencies/eww-dependencies.org][dependencies]]
+- dunst : [[dependencies/dunst-dependencies.org][dependencies]]
