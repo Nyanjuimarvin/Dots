@@ -18,3 +18,11 @@ Use [[https://rustup.rs/][rustup]] to install as it's easier.
 + glib2 (libgio, libglib-2, libgobject-2)
 + gcc-libs (libgcc)
 + glibc
+
+**** Fedora
+
+#+BEGIN_SRC bash
+
+sudo dnf install gtk3 pango gdk-pixbuf2 cairo glib2 gcc-libs glibc
+
+#+END_SRC
