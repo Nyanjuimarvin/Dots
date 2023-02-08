@@ -16,9 +16,10 @@ A repository for my current desktop configurations
 + Shell (Bash,Fish,zsh)
 + Terminal Emulator ([[https://github.com/kovidgoyal/kitty][Kitty]])
 + App Launcher, Powermenu ([[https://github.com/davatorium/rofi][Rofi]])
-+ Wifi and bluetooth (NetworkManager-dmenu)
++ WiFi and bluetooth (NetworkManager-dmenu)
 + Menu (dmenu)
 + Resource Monitor ([[https://github.com/aristocratos/btop][btop]])
 
 
 ** Dependencies
+- polybar : [[dependencies/polybar-dependencies.org][dependencies]]
