@@ -1,0 +1,4 @@
+#+TITLE: DOTS
+#+AUTHOR: Nyanjui Marvin
+
+A repository for my current desktop configurations
