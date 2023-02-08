@@ -1,0 +1,51 @@
+#!/usr/bin/sh
+
+#Initialize cursor
+xsetroot -cursor_name left_ptr 
+
+#Intellij/Android-studio/Java apps
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dsun.java2d.opengl=true'
+
+#Workspaces
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         2
+bspc config window_gap           5
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+#bspc config active_border_color '#0C1115'
+bspc config active_border_color  '#ff4500'
+bspc config normal_border_color '#928374'
+bspc config focused_border_color '#ff4500'
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+#Start Emacs as Tiled
+bspc rule -a Emacs state=tiled
+
+#AutoStart
+
+#Initialize simple x hotkey daemon
+sxhkd &
+
+#Dunst
+dunst &
+
+nm-applet &
+
+
+#Picom for Transparency
+picom &
+xsettingsd &
+bash ~/.config/polybar/launch.sh --cuts
+feh --bg-fill --randomize ~/Pictures/Wallpapers/dawn.png
+spotify-listener &
+disown
