@@ -5,20 +5,20 @@ A repository for my current desktop configurations
 
 ** UTILITIES
 + Tiling Window Manager ([[https://github.com/baskerville/bspwm][Bspwm]])
-+ Keybindings (Sxhkd)
++ Keybindings ([[https://github.com/baskerville/sxhkd][Sxhkd]])
 + Editors (Android Studio, Intellij, VsCode, Emacs, Nvim)
 + Browser (Firefox,QuteBrowser)
-+ Bar (Polybar)
-+ Dashboard, System Menu and Player (eww widgets)
++ Bar ([[https://github.com/polybar/polybar][Polybar]])
++ Dashboard, System Menu and Player ([[https://github.com/elkowar/eww][eww widgets]])
 + Screenshot Utility (Scrot)
 + Audio Visualizer (Glava)
-+ Notifications Daemon (dunst)
++ Notifications Daemon ([[https://github.com/dunst-project/dunst][dunst]])
 + Shell (Bash,Fish,zsh)
-+ Terminal Emulator (Kitty)
-+ App Launcher, Powermenu (Rofi)
++ Terminal Emulator ([[https://github.com/kovidgoyal/kitty][Kitty]])
++ App Launcher, Powermenu ([[https://github.com/davatorium/rofi][Rofi]])
 + Wifi and bluetooth (NetworkManager-dmenu)
 + Menu (dmenu)
-+ Resource Monitor (btop)
++ Resource Monitor ([[https://github.com/aristocratos/btop][btop]])
 
 
 ** Dependencies
