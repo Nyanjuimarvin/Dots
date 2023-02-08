@@ -26,3 +26,11 @@ Use [[https://rustup.rs/][rustup]] to install as it's easier.
 sudo dnf install gtk3 pango gdk-pixbuf2 cairo glib2 gcc-libs glibc
 
 #+END_SRC
+
+**** Arch
+
+#+BEGIN_SRC bash
+
+sudo pacman -S gtk3 pango gdk-pixbuf2 cairo glib2 gcc-libs glibc
+
+#+END_SRC
