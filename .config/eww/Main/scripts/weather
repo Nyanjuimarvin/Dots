@@ -11,7 +11,7 @@ cache_weather_icon=${cache_dir}/weather-icon
 ## Weather data
 # get Your data from here : https://openweathermap.org/
 KEY=a83bbddb384f661117b2fa19fffc78f1 #https://home.openweathermap.org/api_keys
-ID=184742 # git your city id
+ID=184742 # get your city id
 UNIT="metric"	# Available options : 'metric' or 'imperial'
 
 ## Make cache dir
