@@ -39,6 +39,10 @@ song_status_format = "{{%a{ - %t}}|{ - %f}{ - %b{ (%y)}}}"
 song_library_format = "{{%a - %t}|{%f}}{$R%l}"
 empty_tag_color = "black"
 
+[Lyrics]
+lyrics_fetchers = musixmatch
+fetch_lyrics_for_current_song_in_background = yes
+
 [global]
 colors_enabled = "yes"
 main_window_color = "default"
