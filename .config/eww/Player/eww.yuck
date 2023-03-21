@@ -31,7 +31,7 @@
       (box :class "player-info-box" :hexpand "false" :vexpand "false" :space-evenly "false" :orientation "v" :spacing 15
         (label :class "player-info-title" :text "󰝚  Title: ${title}" :halign "start" :limit-width 30 :tooltip "${title}")
         (label :class "player-info-artist" :text "󰠃  Artist: ${artist}" :halign "start" :limit-width 30 :tooltip "${artist}")
-        (label :class "player-info-album" :text "󰀥  Album: ${album}" :halign "start" :limit-width 30 :tooltip "${album}")
+        (label :class "player-info-album" :text "  Album: ${album}" :halign "start" :limit-width 30 :tooltip "${album}")
         (label :class "player-info-length" :text "󰦚  Length: ${length-info}" :halign "start" :tooltip "${length-info}")
         (eventbox :cursor "pointer" (button :class "player-info-button" :halign "start" :tooltip "Open in Spotify" :onclick "xdg-open 'spotify:track:${trackid}'" "Open in Spotify")))
       (box :class "player-cover-box" :hexpand "false" :halign "end" :vexpand "false" :space-evenly "false" :style "background-image: url('${art}');"))
@@ -58,12 +58,12 @@
         (button :class "equalizer-btn ${eq-status == "On" ? "equalizer-btn-on" : "equalizer-btn-off"}" :onclick "Player/scripts/equalizer" "󰺢")))))
 
 (defwidget visualizer []
-  (box :class "main-album-box" :hexpand "false" :vexpand "false" :space-evenly "false" :width 720 :height 280 :orientation "v"
+  (box :class "main-album-box" :hexpand "false" :vexpand "false" :space-evenly "false" :width 720 :height 250 :orientation "v"
   (label :class "vz-title" :text "${title}" :halign "center" :vexpand "false" :space-evenly "false")
   (box :class "player-album-box" :halign "center" :valign "center" :hexpand "false" :vexpand "false" :space-evenly "false" :style "background-image: url('${art}');")))
 
 (defwidget lyrics []
-  (box :class "lyrics-main-box" :orientation "v" :hexpand "false" :vexpand "false" :space-evenly "false" :width 720 :height 280 {get-lyrics} 
+  (box :class "lyrics-main-box" :orientation "v" :hexpand "false" :vexpand "false" :space-evenly "false" :width 720 :height 260 {get-lyrics} 
     (label :class "lyrics-label" :text "L Y R I C S" :halign "center" :vexpand "false" :space-evenly "false")
     (label :class "lyrics-title" :text "${title}" :halign "center" :vexpand "false" :space-evenly "false")
     (label :class "lyrics" :text lyrics)))
@@ -73,7 +73,7 @@
   :windowtype "normal"
   :wm-ignore true
   :monitor 0
-  :geometry (geometry :anchor "center" :height 450 :width 800)
+  :geometry (geometry :anchor "center" :height 400 :width 800)
   (player))
 
 (defwindow visualizer

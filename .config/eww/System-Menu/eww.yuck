@@ -124,7 +124,7 @@
       (box :class "power-profiles-box" :space-evenly "false" :halign "center"
         (label :class "balanced-icon" :text "󰾆")
         (button :class "profile-switcher" :onclick "System-Menu/scripts/power-profile --toggle" :tooltip "${profiles-mode}" "${profiles-icon}")
-        (label :class "performance-icon" :text "󰓅"))
+        (label :class "performance-icon" :text "󰾅"))
       (box :class "tips-main-box" :halign "end" :space-evenly "false"
       (eventbox :cursor "pointer"
         (button :class "tips-toggler" :onclick "System-Menu/scripts/tips/toggle-tips --toggle" "${tips-icon}  ${tips-status}"))))))

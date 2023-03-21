@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-STATUS=$(nmcli | grep wlan0 | awk 'FNR == 1 {print $2}')
-SSID=$(iwgetid | awk -F '"' '{ print $2 }')
-STRENGTH=$(awk 'NR==3 {printf("%.0f",$3*10/7)}' /proc/net/wireless)
+#STATUS=$(nmcli | grep wlan0 | awk 'FNR == 1 {print $2}')
+STATUS=$(nmcli | grep wlp13s0 | awk 'FNR == 1 {print $2}')
+#SSID=$(iwgetid | awk -F '"' '{ print $2 }')
+SSID=$(nmcli connection show --active | grep wifi | awk '{print $1}')
+#STRENGTH=$(awk 'NR==3 {printf("%.0f",$3*10/7)}' /proc/net/wireless)
+STRENGTH=$(nmcli dev wifi | awk 'FNR == 2 {print $8}')
 
 toggle() {
     if [[ $STATUS == "connected" ]]; then

@@ -7,11 +7,12 @@ icon() {
     if [[ "$bri" -gt "90" ]]; then
         echo "󰃠"
         elif [[ "$bri" -gt "50" ]]; then
-        echo "󰃝"
+        echo ""
+        #
         elif [[ "$bri" -gt "30" ]]; then
-        echo "󰃟"
+        echo ""
     else
-        echo "󰃞"
+        echo ""
     fi
 }
 
