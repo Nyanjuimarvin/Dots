@@ -30,11 +30,19 @@ fi
 
 unset rc
 
+#ALIASES
+
 #Alias to start Emacs client through Emacs server
 alias emacs="emacsclient -c -a 'emacs'"
 
 #Alias for current dotfiles bare repository
 alias do='/usr/bin/git --git-dir=$HOME/Dots/ --work-tree=$HOME'
+
+#Eject
+alias ej='eject'
+
+#ls -la
+alias lsa='ls -la'
 
 . "$HOME/.cargo/env"
 
