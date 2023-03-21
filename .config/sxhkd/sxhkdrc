@@ -26,7 +26,7 @@ alt + d
       
 #Emacs
 alt + e
-      emacs
+      emacsclient -c -a 'emacs'
 
 #Firefox
 alt + f
