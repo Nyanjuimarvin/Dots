@@ -6,6 +6,8 @@ configuration {
 /*****----- Global Properties -----*****/
 @import                          "shared/colors.rasi"
 @import                          "shared/fonts.rasi"
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
 
 /*****----- Main Window -----*****/
 window {
