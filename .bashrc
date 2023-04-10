@@ -64,7 +64,7 @@ ex ()
 alias emacs="emacsclient -c -a 'emacs'"
 
 #Alias for current dotfiles bare repository
-alias do='/usr/bin/git --git-dir=$HOME/Dots/ --work-tree=$HOME'
+alias ds='/usr/bin/git --git-dir=$HOME/Dots/ --work-tree=$HOME'
 
 #Eject
 alias ej='eject'
@@ -89,6 +89,7 @@ alias l.='exa -a | egrep "^\."'
 
 
 # git
+alias innit='git init'#init is a reserved keyword
 alias addall='git add .'
 alias branch='git branch'
 alias checkout='git checkout'
@@ -100,6 +101,15 @@ alias push='git push origin'
 alias stat='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
+
+#Run Flatpak Apps
+
+#Trilium
+alias ftril='flatpak run com.github.zadam.trilium'
+
+
+#Journalctl
+alias jctl='journalctl -p 3 -xb'
 
 
 . "$HOME/.cargo/env"
