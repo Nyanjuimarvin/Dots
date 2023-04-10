@@ -1,0 +1,50 @@
+$white: #FFFFFF;
+$gray: #1E202E;
+$dark-gray: #1E202E;
+$red: #FFAFAF;
+$yellow: #ffff5f;
+$orange: #FF9E64;
+$green: #5fff5f;
+$blue: #87AFFF;
+$magenta: #BB9AF7;
+$cyan: #5FFFFF;
+$military: #A0AA87;
+
+$background: #262626;
+$background-alt: $dark-gray;
+$background-alt2: $gray;
+$foreground: #767676;
+$bg_inactive_tab: #303030;
+$fg_inactive_tab: $foreground;
+$bg_active_tab: $foreground;
+$fg_active_tab: $white;
+
+.tdoos {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.tdoos .content {
+	padding: 1rem 2rem;
+	margin: 0;
+}
+
+.tdoos .content .panel {
+	background-color: $bg;
+	color: $foreground;
+	margin: .5rem;
+	padding: 1rem 2rem;
+	border-radius: 12px;
+  font-size: 16px;
+}
+
+.tdoos .content .panel .title {
+  font-size: 20px;
+  color: $white;
+  font-weight: bold;
+}
+
+.tdoos .content .panel .description {
+  padding: 1rem 0;
+}

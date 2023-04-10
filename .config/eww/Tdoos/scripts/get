@@ -1,0 +1,60 @@
+#!/bin/bash
+
+set -x
+
+fn=$1
+opt=
+ll=-1
+
+if [[ "$fn" = "--"* ]]; then
+  opt=$1
+  fn=$2
+fi
+
+if [[ "$opt" = "--ll="* ]]; then
+  ll=$(echo "$opt" | sed 's/--ll=//')
+fi
+
+r=$(($(date +%s) / 300))
+datadir=$(realpath $(dirname $0)/../data)
+wordslen=$(ls $datadir | wc -l)
+wordid=$(($r % $wordslen + 1))
+wordfolder=$datadir/$(ls $datadir | head -$wordid | tail -1)
+
+splitstr() {
+  str=$1
+
+  if [ "$ll" -le 0 ]; then
+    echo $str
+    return
+  fi
+
+  while [ ${#str} -gt 0 ]; do
+    part=$(echo $str | sed "s/^ *\(.\{$ll\}\).*/\1/")
+    part=$(echo $part | sed "s/[a-z]*$//")
+    echo $part
+    str=$(echo $str | sed "s/^.\{1,${#part}\}//")
+  done
+}
+
+word() {
+  cat $wordfolder/word
+}
+
+type() {
+  cat $wordfolder/type
+}
+
+meaning() {
+  w=$(cat $wordfolder/meaning)
+  splitstr "$w"
+}
+
+url() {
+  cat $wordfolder/url
+}
+
+[ "$fn" = "word" ] && word && exit
+[ "$fn" = "type" ] && type && exit
+[ "$fn" = "meaning" ] && meaning && exit
+[ "$fn" = "url" ] && url && exit
