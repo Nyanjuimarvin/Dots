@@ -13,7 +13,11 @@ configuration {
 /*****----- Global Properties -----*****/
 @import                          "shared/colors.rasi"
 @import                          "shared/fonts.rasi"
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
 
+/* Light theme. */
+//@import "~/.cache/wal/colors-rofi-light"
 * {
     border-colour:               var(selected);
     handle-colour:               var(selected);
