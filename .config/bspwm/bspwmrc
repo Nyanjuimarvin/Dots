@@ -4,8 +4,12 @@
 xsetroot -cursor_name left_ptr 
 
 #Intellij/Android-studio/Java apps
-export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS='-Dsun.java2d.opengl=true'
+#export _JAVA_AWT_WM_NONREPARENTING=1
+#export _JAVA_OPTIONS='-Dsun.java2d.opengl=true'
+#
+wmname LG3D &
+bspc rule -a android-studio state=floating border=off follow=on
+
 
 #Workspaces
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
@@ -65,6 +69,6 @@ picom &
 xsettingsd &
 
 bash ~/.config/polybar/launch.sh --cuts
-feh --bg-fill --randomize ~/Pictures/Wallpapers/dawn.png
+feh --bg-fill Pictures/Wallpapers/wall-13.jpg 
 spotify-listener &
 disown
