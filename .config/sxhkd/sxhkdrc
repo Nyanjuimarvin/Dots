@@ -2,9 +2,9 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# Thunar
 super + Return
-	xfce4-terminal
+	      thunar
 
 #My Apps
       
@@ -45,7 +45,7 @@ alt + l
       lutris
       
 #Spotify
-alt + m
+super + alt + m
       flatpak run com.spotify.Client
 
 #Nautilus
@@ -60,13 +60,26 @@ alt + q
 super + alt  + n
               flatpak run com.github.zadam.trilium
 
+
+#MPD/MPC and NCMPCPP
+
+#Mpd Script
+
+shift + alt + m
+              $HOME/.config/rofi/applets/bin/mpd.sh
+
+# Open ncmpcpp in Kitty
+shift + m
+	      kitty --hold ncmpcpp
+
+
 # program launcher
 super + space
-	dmenu_run
+	      dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	      pkill -USR1 -x sxhkd
 
 #
 # bspwm hotkeys
@@ -191,6 +204,10 @@ XF86AudioMute
 # Fullscreen screenshot -> scrot
 ctrl + @Print
 	scrot -d1 && mv *.png ~/Pictures/Screenshots/
+
+#Screenshot script with more options
+alt + @Print
+      $HOME/.config/rofi/applets/bin/screenshot.sh
 
 # Brightness -> brightnessctl
 #
