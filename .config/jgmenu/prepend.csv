@@ -2,9 +2,9 @@
 @search,,42,15,150,20,2,left,top,#c0caf5,#7aa2f7,Search
 Terminal,kitty,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/terminal.png
 Web Browser,firefox,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/web-browser.png
-File manager,nautilus,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/file-manager.png
-Text Editor,emacs,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/edit-note.png
-Music Player,ncmpcpp,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/music.png
+File manager,thunar,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/file-manager.png
+Text Editor,emacsclient -c -a 'emacs',/home/nyanjuimarvin/.config/jgmenu/MenuIcons/edit-note.png
+Music Player,kitty -e ncmpcpp,/home/nyanjuimarvin/.config/jgmenu/MenuIcons/music.png
 
 ^sep()
 Applications,^checkout(lx-apps),/home/nyanjuimarvin/.config/jgmenu/MenuIcons/applications.png
@@ -16,7 +16,7 @@ BSPWM,^checkout(bspwm),/home/nyanjuimarvin/.config/jgmenu/MenuIcons/bspwm.png
 
 ^tag(bspwm)
 Website, firefox https://github.com/baskerville/bspwm, /home/nyanjuimarvin/.config/jgmenu/MenuIcons/bspwm.png
-Edit Config, nvim .config/bspwm/bspwmrc, /home/nyanjuimarvin/.config/jgmenu/MenuIcons/edit-note.png
+Edit Config,kitty -e nvim .config/bspwm/bspwmrc, /home/nyanjuimarvin/.config/jgmenu/MenuIcons/edit-note.png
 Restart, bspc wm -r, /home/nyanjuimarvin/.config/jgmenu/MenuIcons/restart.png
 Exit, bspc quit, /home/nyanjuimarvin/.config/jgmenu/MenuIcons/exit.png
 
